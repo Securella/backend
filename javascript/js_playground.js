@@ -39,6 +39,7 @@ var nikeSBShoes = 799.23;
 var coupon = 500;
 
 // in js, if you use "===" it checks for the value and the type
+// !== not equal to
 var JacksAge = "23";
 
 if (age === JacksAge) {
@@ -59,3 +60,72 @@ if (nikeSBShoes <= myAccountBalance) {
 } else {
     console.log("You too broke for shoes, bra!");
 }
+
+// logical operators
+if (1 == 1 && 2 == 2 || "Joe" === "Joe"){
+    console.log("These are both true!");
+}
+
+if (true && true) {
+    console.log("These are the same!");
+}
+
+if (1 == 3 || "Joe" === "Joe") {
+    console.log("One of these are true!");
+}
+
+var cat1 = 5;
+var cat2 = 10;
+var cat3 = 1;
+var disabledHandicap = false;
+
+if (cat1 > cat2 && cat1 > cat3 && !disabledHandicap) {
+    console.log("Cat 1 is the cutest!");
+} else if (cat2 > cat1 && cat2 > cat3 && !disabledHandicap) {
+    console.log("Cat 2 is the cutest!");
+} else if (cat3 > cat1 && cat3 > cat2 || disabledHandicap) {
+    console.log("Cat 3 is the cutest!");
+}
+
+// arrays
+// not very practical to do like this:
+var student1 = "Timmy";
+var student2 = "Janessa";
+var student3 = "Arun";
+
+var students = ["Timmy", "Janessa", "Arun"];
+// better option: studentNames!!!
+console.log(students);
+
+var naughtyList = []; // empty array
+naughtyList.push(students[0]); // adds Timmy to the end of the array
+console.log(naughtyList);
+// ! you add by using push keyword
+// and remove by grabbing index of element you want to remove and splice it
+
+// how do yoiu remove element out of array?
+var index =naughtyList.indexOf("Timmy");
+
+if (index > -1) {
+    naughtyList.splice(index, 1); //splice function is gonna cut it
+}
+console.log(index);
+console.log(naughtyList);
+
+// var badKid = students[0]; // doesn't make sense to store variable like this
+// as you get more advanced, you'll use arrays less often as it's too slow
+// arrays are linerar, so it takes time one by one
+
+// a big no-no for mixed data:
+var person = ["John", 23, "USA","teacher", true];
+// always keep an array same data type!!!
+
+
+// Code Challenge 1 - Array Sort
+// 1, 10, 5, 15, 2, 7, 28, 900, 45, 18, 27
+const arraySort = [1, 10, 5, 15, 2, 7, 28, 900, 45, 18, 27];
+// console.log(arraySort);
+arraySort.sort(function (a, b) {
+	return a - b;
+});
+console.log(arraySort);
