@@ -98,7 +98,7 @@ var studentNames = ["Timmy", "Janessa", "Arun"];
 console.log(students);
 
 var naughtyList = []; // empty array
-naughtyList.push(students[0]); // adds Timmy to the end of the array
+naughtyList.push(studentNames[0]); // adds Timmy to the end of the array
 console.log(naughtyList);
 // ! you add by using push keyword
 // and remove by grabbing index of element you want to remove and splice it
