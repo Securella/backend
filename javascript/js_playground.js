@@ -93,7 +93,7 @@ var student1 = "Timmy";
 var student2 = "Janessa";
 var student3 = "Arun";
 
-var students = ["Timmy", "Janessa", "Arun"];
+var studentNames = ["Timmy", "Janessa", "Arun"];
 // better option: studentNames!!!
 console.log(students);
 
@@ -129,3 +129,22 @@ arraySort.sort(function (a, b) {
 	return a - b;
 });
 console.log(arraySort);
+
+
+// loops
+var total = 10;
+for (var x = 0; x < total; x++) {
+    //iterate until not told to
+    console.log(x);
+}
+
+var students = ["John", "Jacob", "Jingle", "Heimer", "Smith"];
+// this is not very efficient!:
+// console.log(students[0]);
+// console.log(students[1]);
+// console.log(students[2]);
+
+for (var index = 0; index < students.length; index++) {
+    console.log(students[index]);
+}
+
