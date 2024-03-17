@@ -148,3 +148,4 @@ for (var index = 0; index < students.length; index++) {
     console.log(students[index]);
 }
 
+//functions
