@@ -220,3 +220,11 @@ var bankOperations = [];
 bankOperations.push(transaction);
 bankOperations.push(printCustomerName);
 bankOperations.push(applyForCreditCard);
+
+// objects
+// js object is a collection of named values
+var student = {
+    firstName: "John", // it's called a property or a key
+    lastName: "Parker", // spaces do not matter, you can write it in ione line
+    age: 7
+};
