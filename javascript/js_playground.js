@@ -196,3 +196,27 @@ makeTransaction(10.45);
 console.log(bankBalance);
 makeTransaction(450.00);
 
+var transaction = function(priceOfSale) {
+    if (priceOfSale <= bankBalance) {
+        bankBalance -= priceOfSale;
+        console.log("Purchase Successful");
+    } else {
+        console.log("Insufficient Funds");
+    }
+};
+
+transaction(10.00);
+
+// which one should I use: function or variable?
+var printCustomerName = function(first, last) {
+    console.log("First Name: " + first + " Last Name: " + last);
+}
+
+var applyForCreditCard = function(creditScore, soul) {
+    //call some functions to process application
+}
+// you can store in an array if you put var keyword in front of it
+var bankOperations = [];
+bankOperations.push(transaction);
+bankOperations.push(printCustomerName);
+bankOperations.push(applyForCreditCard);
