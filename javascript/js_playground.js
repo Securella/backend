@@ -223,11 +223,11 @@ bankOperations.push(applyForCreditCard);
 
 // objects
 // js object is a collection of named values
-var student = {
-    firstName: "John", // it's called a property or a key
-    lastName: "Parker", // spaces do not matter, you can write it in ione line
-    age: 7
-};
+//var student = {
+    //firstName: "John", // it's called a property or a key
+    //lastName: "Parker", // spaces do not matter, you can write it in ione line
+    //age: 7
+//};
 
 console.log(student.firstName);
 console.log(student.lastName);
@@ -235,26 +235,26 @@ console.log(student["firstName"]); // this is not very practical
 console.log(student["lastName"]); // but it works
 // how can I make it more reusable so we can have multiple students?
 // creates a new emptyobject:
-var student1 = new Object();
-student1.firstName = "John";
-student1.lastName = "Parker";
-student1.age = 7;
+//var student1 = new Object();
+//student1.firstName = "John";
+//student1.lastName = "Parker";
+//student1.age = 7;
 
-var student0 = { // another way
-    firstName: "Jane",
-    lastName: "Lo",
-    age: 8,
-    greeting: function() {
-        return "Hi, I'm " + this.firstName + " and I'm " + this.age + " years old.";
-    }
-}
+// var student0 = { // another way
+    //firstName: "Jane",
+    //lastName: "Lo",
+    //age: 8,
+    //greeting: function() { // but it's not cool to add it to each student, too much code
+        //return "Hi, I'm " + this.firstName + " and I'm " + this.age + " years old.";
+    //}
+//}
 
-console.log(student0.greeting());
+// console.log(student0.greeting());
 
-var student2 = {}; // one more way to create an object
-student2.firstName = "Zack";
-student2.lastName = "Bobo";
-student2.age = 5;
+// var student2 = {}; // one more way to create an object
+// student2.firstName = "Zack";
+// student2.lastName = "Bobo";
+// student2.age = 5;
 
 // rule of thumb:
 // if you ever ever feel the need to go through list of objects
@@ -263,10 +263,33 @@ student2.age = 5;
 // you should be accessing values like so: console.log(student.firstName);
 
 var students = []; // empty array
-students.push(student0);
-students.push(student1);
-students.push(student2);
+//students.push(student0);
+//students.push(student1);
+//students.push(student2);
 
 for (var index = 0; index < students.length; index++) {
-    console.log(students[index]);
+    var student = students[index];
+    console.log(students.greeting());
+}
+
+// object constructor to create reusable objects
+// we do it by specifying a function
+function student(first, last, age) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.greeting = function() {
+        return "Hi, I'm " + this.firstName + " and I'm " + this.age + " years old.";
+    }
+}
+
+//var s1 = new student("Pekka", "Pekkanen", 5);
+//console.log(s1.greeting());
+
+students.push(new student("Pekka", "Pekkanen", 5));
+students.push(new student("Mikko", "Mikkonen", 6));
+students.push(new student("Jukka", "Jukkanen", 7));
+
+for (var key in student) {
+    console.log(student[key]);
 }
