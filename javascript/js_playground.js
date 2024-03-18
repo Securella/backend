@@ -228,3 +228,45 @@ var student = {
     lastName: "Parker", // spaces do not matter, you can write it in ione line
     age: 7
 };
+
+console.log(student.firstName);
+console.log(student.lastName);
+console.log(student["firstName"]); // this is not very practical
+console.log(student["lastName"]); // but it works
+// how can I make it more reusable so we can have multiple students?
+// creates a new emptyobject:
+var student1 = new Object();
+student1.firstName = "John";
+student1.lastName = "Parker";
+student1.age = 7;
+
+var student0 = { // another way
+    firstName: "Jane",
+    lastName: "Lo",
+    age: 8,
+    greeting: function() {
+        return "Hi, I'm " + this.firstName + " and I'm " + this.age + " years old.";
+    }
+}
+
+console.log(student0.greeting());
+
+var student2 = {}; // one more way to create an object
+student2.firstName = "Zack";
+student2.lastName = "Bobo";
+student2.age = 5;
+
+// rule of thumb:
+// if you ever ever feel the need to go through list of objects
+// or have to go through all the keys inside of an object
+// you're probably using them wrong
+// you should be accessing values like so: console.log(student.firstName);
+
+var students = []; // empty array
+students.push(student0);
+students.push(student1);
+students.push(student2);
+
+for (var index = 0; index < students.length; index++) {
+    console.log(students[index]);
+}
