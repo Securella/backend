@@ -1,0 +1,24 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "Using EJS Templates",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Securella/backend.git"
+  },
+  "keywords": [
+    "npm",
+    "express",
+    "ejs"
+  ],
+  "author": "Oona T.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Securella/backend/issues"
+  },
+  "homepage": "https://github.com/Securella/backend#readme"
+}
