@@ -1,0 +1,28 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "A basic Node.js application using Express to display a \"Hello World\" message.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Securella/backend.git"
+  },
+  "keywords": [
+    "node",
+    "backend",
+    "js"
+  ],
+  "author": "Oona T.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Securella/backend/issues"
+  },
+  "homepage": "https://github.com/Securella/backend#readme",
+  "dependencies": {
+    "express": "4.18.3"
+  }
+}
