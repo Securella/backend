@@ -1,0 +1,31 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "Express.js application that receives POST requests from a form, async",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Securella/backend.git"
+  },
+  "keywords": [
+    "express",
+    "node",
+    "json",
+    "npm",
+    "post",
+    "async"
+  ],
+  "author": "Oona T.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Securella/backend/issues"
+  },
+  "homepage": "https://github.com/Securella/backend#readme",
+  "dependencies": {
+    "express": "^4.19.1"
+  }
+}
