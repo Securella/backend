@@ -1,0 +1,32 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "A simple feedback submission application where users can enter feedback through a form.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Securella/backend.git"
+  },
+  "keywords": [
+    "web",
+    "express",
+    "ejs",
+    "node",
+    "html"
+  ],
+  "author": "Oona T.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Securella/backend/issues"
+  },
+  "homepage": "https://github.com/Securella/backend#readme",
+  "dependencies": {
+    "body-parser": "1.20.2",
+    "ejs": "3.1.9",
+    "express": "4.19.1"
+  }
+}

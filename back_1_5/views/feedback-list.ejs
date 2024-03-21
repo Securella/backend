@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback List</title>
+</head>
+<body>
+    <h1>Submitted Feedback</h1>
+    <ul>
+        <% feedbackData.forEach(function(feedback) { %>
+            <li><strong><%= feedback.name %></strong>: <%= feedback.feedback %></li>
+        <% }); %>
+    </ul>
+</body>
+</html>
