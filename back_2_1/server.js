@@ -19,6 +19,7 @@ app.post('/submit', async (req, res) => {
     const submission = JSON.stringify({ name, feedback }) + '\n';
 
     try {
+        //make sure to comment out a solution needed!!
         // Solution 1: Callback Method
         appendFile('submissions.json', submission, (err) => {
             if (err) {
